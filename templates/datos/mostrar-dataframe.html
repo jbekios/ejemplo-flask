@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <title>Mostrar un dataframe</title>
+</head>
+<body>
+    <h1>Datos del DataFrame:</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dato in datos %}
+                <tr>
+                    <td>{{ dato['Nombre'] }}</td>
+                    <td>{{ dato['Edad'] }}</td>
+                    <td>{{ dato['Ciudad'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
